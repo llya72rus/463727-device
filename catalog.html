@@ -58,30 +58,47 @@
 			<form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
 				<fieldset>
 					<legend class="filter-type-name">Стоимость</legend>
-					<label for="price-filter" class="visually-hidden">Стоимость товара</label>
-					от 0<input type="range" id="price-filter" name="price" min="0" max="5000" step="100">до 5000
+					<div class="price-range">
+						<span class="price-range__price-roller__left"></span>
+						<span class="price-range__price-roller__right"></span>
+					</div>
 				</fieldset>
 				<fieldset>
 					<legend class="filter-type-name">Цвет</legend>
 					<p class="filter-item">
-						<input type="checkbox" name="black" id="filter-black" class="visually-hidden filter-black" checked>
-						<label for="filter-black">Черный</label>
+						<label>
+							<input type="checkbox" name="black" id="filter-black" class="visually-hidden filter-black" checked>
+							<span class="filter-checkbox-indicator"></span>
+							Черный
+					    </label>
 					</p>
 					<p class="filter-item">
-						<input type="checkbox" name="white" id="filter-white" class="visually-hidden filter-white">
-						<label for="filter-white">Белый</label>
+						<label>
+							<input type="checkbox" name="white" id="filter-white" class="visually-hidden filter-white">
+							<span class="filter-checkbox-indicator"></span>
+							Белый
+					    </label>
 					</p>
 					<p class="filter-item">
-						<input type="checkbox" name="blue" id="filter-blue" class="visually-hidden filter-blue" checked>
-						<label for="filter-blue">Синий</label>
+						<label>
+							<input type="checkbox" name="blue" id="filter-blue" class="visually-hidden filter-blue" checked>
+							<span class="filter-checkbox-indicator"></span>
+							Синий
+					    </label>
 					</p>
 					<p class="filter-item">
-						<input type="checkbox" name="red" id="filter-red" class="visually-hidden filter-red" checked>
-						<label for="filter-red">Красный</label>
+						<label>
+							<input type="checkbox" name="red" id="filter-red" class="visually-hidden filter-red" checked>
+							<span class="filter-checkbox-indicator"></span>
+							Красный
+					    </label>
 					</p>
 					<p class="filter-item">
-						<input type="checkbox" name="pink" id="filter-pink" class="visually-hidden filter-pink">
-						<label for="filter-pink">Розовый</label>
+						<label>
+							<input type="checkbox" name="pink" id="filter-pink" class="visually-hidden filter-pink">
+							<span class="filter-checkbox-indicator"></span>
+							Розовый
+					    </label>
 					</p>
 				</fieldset>
 				<fieldset>
@@ -92,6 +109,7 @@
 					</p>
 					<p class="filter-item">
 						<input type="radio" name="bluetooth" id="bluetooth-not-available" class="visually-hidden">
+						<span class="filter-checkbox-indicator"></span>
 						<label for="bluetooth-not-available">Нет</label>
 					</p>
 				</fieldset>
@@ -117,8 +135,8 @@
 							<a href="#">Любительская селфи-палка</a>
 						</h3>
 						<span class="product-card-price">500 руб.</span>
-						<button class="product-card-basket">В корзину</button>
-						<button class="product-card-compare" href="#">Добавить к сравнению</button>		
+						<a href="#" class="product-card-basket">В корзину</a>
+						<button class="product-card-compare">Добавить к сравнению</button>		
 					</article>
 				</li>
 				<li class="catalog-item">
@@ -128,8 +146,8 @@
 							<a href="#">Профессиональная селфи-палка</a>
 						</h3>
 						<span class="product-card-price">1 500 руб.</span>
-						<button class="product-card-basket">В корзину</button>
-						<button class="product-card-compare" href="#">Добавить к сравнению</button>
+						<a href="#" class="product-card-basket">В корзину</a>
+						<button class="product-card-compare">Добавить к сравнению</button>	
 					</article>
 				</li>
 				<li class="catalog-item">
@@ -139,8 +157,8 @@
 							<a href="#">Непотопляемая селфи-палка</a>
 						</h3>
 						<span class="product-card-price">2 500 руб.</span>
-						<button class="product-card-basket">В корзину</button>
-						<button class="product-card-compare" href="#">Добавить к сравнению</button>
+						<a href="#" class="product-card-basket">В корзину</a>
+						<button class="product-card-compare">Добавить к сравнению</button>	
 					</article>	
 				</li>
 				<li class="catalog-item">
@@ -150,17 +168,17 @@
 							<a href="#">Селфи-палка &laquo;Следуй за мной&raquo;</a>
 						</h3>
 						<span class="product-card-price">4 900 руб.</span>
-						<button class="product-card-basket">В корзину</button>
-						<button class="product-card-compare" href="#">Добавить к сравнению</button>
+						<a href="#" class="product-card-basket">В корзину</a>
+						<button class="product-card-compare">Добавить к сравнению</button>	
 					</article>	
 				</li>
 			</ul>
 			<ul class="pagination-list">
-				<li class="pagination-item-back"><a>Назад</a></li>
-				<li class="pagination-item-current"><a href="#">1</a></li>
+				<li class="pagination-item back"><a>Назад</a></li>
+				<li class="pagination-item current"><a href="#">1</a></li>
 				<li class="pagination-item"><a href="#">2</a></li>
 				<li class="pagination-item"><a href="#">3</a></li>
-				<li class="pagination-item-forward"><a href="#">Вперед</a></li>
+				<li class="pagination-item forward"><a href="#">Вперед</a></li>
 			</ul>
 		</section>
 	</main>
