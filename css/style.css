@@ -191,9 +191,12 @@ a {
   letter-spacing: 3.6px;
   text-align: center;
   text-transform: uppercase;
-  background-color: #f0c52e;
+  background: linear-gradient(to bottom, #ffffff 33%, #f0c52e 33%, #f0c52e 66%, #ffffff 33%);
   color: #000000;
   border: none;
+}
+.page-link:hover {
+	background: #f0c52e;
 }
 .page-link:active {
 	color: #a88a20;
