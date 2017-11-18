@@ -10,7 +10,7 @@
 <body>
 	<header class="main-header">
 		<div class="container">
-			<a class="header-logo logo">Device</a>
+			<a href="#" class="header-logo logo">Device</a>
 			<div class="top-search">
 				<form action="https://echo.htmlacademy.ru" method="get" class="site-search-form">
 					<input type="text" name="site-search" class="site-search" placeholder="Поиск по сайту">
@@ -18,19 +18,14 @@
 				</form>	
 			</div>
 			<div class="header-user-interface user-interface">
-				<div class="header-login">
-					<a href="#">Войти</a>
-				</div>
-				<div class="header-login">
-					<a href="#">Валентин Петухов</a>
-					<a href="#" class="header-logout">Выйти</a>
-				</div>
+				<a href="#" class="user-name">Валентин Петухов</a>
+				<a href="#" class="header-logout">Выйти</a>
 				<a href="#" class="header-compare">Сравнить</a>
 				<a href="#" class="header-cart">Корзина</a>
 			</div>
 			<nav class="main-nav">
-				<ul class="site-nav">
-					<li class="site-nav-item menu-item dropdown"><a href="#">Каталог товара</a>
+				<ul class="header-menu">
+					<li class="header-menu-item menu-item dropdown"><a href="#">Каталог товара</a>
 						<ul class="submenu">
 							<li class="submenu-item"><a href="#">Виртуальная реальность</a></li>
 							<li class="submenu-item"><a href="#">Моноподы для селфи</a></li>
@@ -40,9 +35,9 @@
 							<li class="submenu-item"><a href="#">Квадрокоптеры</a></li>
 						</ul>
 					</li>
-					<li class="site-nav-item menu-item"><a href="#">Доставка</a></li>
-					<li class="site-nav-item menu-item"><a href="#">Гарантия</a></li>
-					<li class="site-nav-item menu-item"><a href="#">Контакты</a></li>
+					<li class="header-menu-item menu-item"><a href="#">Доставка</a></li>
+					<li class="header-menu-item menu-item"><a href="#">Гарантия</a></li>
+					<li class="header-menu-item menu-item"><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -189,7 +184,7 @@
 		<div class="container">
 			<div class="footer-logo-and-adress">
 				<a href="#" class="footer-logo logo">Device</a>
-				<adress class="footer-adress">г. Москва, ул. Строителей, 15</adress>
+				<address class="footer-address">г. Москва, ул. Строителей, 15</address>
 			</div>
 			<div class="footer-menu-and-social">
 					<ul class="footer-menu">
@@ -224,10 +219,12 @@
 			<textarea cols="30" rows="10" name="feedback-text" id="feedback-text" placeholder="В свободной форме"></textarea>
 			<button type="submit" class="btn-send page-link">Отправить</button>
 		</form>
-		<button type="button" class="feedback-popup-form-close"><span class="visualy-hidden">Закрыть форму</span></button>
+		<button type="button" class="feedback-popup-form-close"><span class="visually-hidden">Закрыть форму</span></button>
 	</section>
 	<section class="map-popup">
-		<img src="img/map-big.jpg" width="960" height="559" alt="Офис компании &laquo;Девайс&raquo; по адресу: г. Москва, ул. Строителей, 15">
+		<a href="#">
+			<img src="img/map-big.jpg" width="960" height="559" alt="Офис компании &laquo;Девайс&raquo; по адресу: г. Москва, ул. Строителей, 15">
+		</a>
 		<button type="button" class="map-popup-close"><span class="visualy-hidden">Закрыть карту</span></button>
 	</section>
 </body>
