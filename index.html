@@ -12,17 +12,17 @@
 	<header class="main-header">
 		<div class="container">
 			<a class="header-logo logo">Device</a>
-			<div class="top-search">
-				<form action="https://echo.htmlacademy.ru" method="get" class="site-search-form">
-					<input type="text" name="site-search" class="site-search" placeholder="Поиск по сайту">
-					<button type="submit" class="site-search-btn">Найти</button>
-				</form>	
-			</div>
-			<div class="header-user-interface user-interface">
-				<a href="#">Войти</a>
-				<a href="#" class="header-compare">Сравнить</a>
-				<a href="#" class="header-cart">Корзина</a>
-			</div>
+			<div class="header-user-panel">
+					<form action="https://echo.htmlacademy.ru" method="get" class="site-search-form">
+						<input type="text" name="site-search" class="site-search" placeholder="Поиск по сайту">
+						<button type="submit" class="site-search-btn">Найти</button>
+					</form>	
+					<div class="header-user-interface user-interface">
+						<a href="#">Войти</a>
+						<a href="#" class="header-compare">Сравнить</a>
+						<a href="#" class="header-cart">Корзина</a>
+					</div>
+				</div>
 			<nav class="main-nav">
 				<ul class="header-menu">
 					<li class="header-menu-item menu-item dropdown"><a href="#">Каталог товара</a>
@@ -48,10 +48,11 @@
 			<!--  <input type="radio" name="slider-item" checked>
 			<input type="radio" name="slider-item">
 			<input type="radio" name="slider-item">-->
-			<section class="first-slider">
+			<section class="first-slider slider">
+				<h2 class="visually-hidden">Селфи-палка</h2>
 				<img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
 				<div class="slider-info">
-					<p class="slider-slogan">Делай селфи как Бен Стиллер!</p>
+					<p class="slider-slogan">Делай селфи,<br>как Бен Стиллер!</p>
 					<p class="slider-desc">Самая длинная палка для селфи доступна в нашем магазине.
 					Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 					<a class="page-link" href="catalog.html">Подробнее</a>
@@ -71,10 +72,11 @@
 					</ul>
 				</div>
 			</section>
-			<section class="second-slider">
+			<section class="second-slider slider">
+				<h2 class="visually-hidden">Фитнес-браслет</h2>
 				<img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
 				<div class="slider-info">
-					<p class="slider-slogan">Худеем правильно!</p>
+					<p class="slider-slogan">Худеем<br>правильно!</p>
 					<p class="slider-desc">Мотивирующие фитнес-браслеты помогут найти в себе силы 
 					не пропускать занятия и соблюдать диету.</p>
 					<a class="page-link" href="catalog.html">Подробнее</a>
@@ -86,7 +88,8 @@
 					</ul>
 				</div>
 			</section>
-			<section class="third-slider">
+			<section class="third-slider slider">
+				<h2 class="visually-hidden">Квадрокоптер</h2>
 				<img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
 				<div class="slider-info">
 					<p class="slider-slogan">Порхает как бабочка, жалит как пчела!</p>
@@ -185,6 +188,7 @@
 			</div>
 		</section>
 		<section class="manufacturers">
+			<h2 class="visually-hidden">Производители оборудования для компании "Девайс"</h2>
 			<div class="container">
 				<ul class="manufacturers-list">
 					<li class="manufacturer">
@@ -195,8 +199,8 @@
 					</li>
 					<li class="manufacturer">
 						<a href="#">
-							<img class="manufacturer-image" width="260" width="260" height="100" src="img/manufacturer-2.png" alt="SP-gadgets">
-							<img class="manufacturer-image-colorless" width="260" width="260" height="100" src="img/manufacturer-2-colorless.png" alt="SP-gadgets">
+							<img class="manufacturer-image" width="260" height="100" src="img/manufacturer-2.png" alt="SP-gadgets">
+							<img class="manufacturer-image-colorless" width="260" height="100" src="img/manufacturer-2-colorless.png" alt="SP-gadgets">
 						</a>
 					</li>
 					<li class="manufacturer">
@@ -214,7 +218,7 @@
 				</ul>
 			</div>
 		</section>
-		<div class="container">
+		<div class="container about-and-contacts">
 			<section class="about">
 				<h2 class="section-title">О нас</h2>
 				<p class="section-text">
@@ -262,12 +266,13 @@
 					<a href="#" class="footer-compare">Сравнить</a>
 					<a href="#" class="footer-basket">Корзина</a>
 				</div>
-				<p class="footer-phone"><a href="tel:+7 (495) 495-95-95">Тел.: +7 (495) 495-95-95</a></p>
+				<p class="footer-phone"><a href="tel:+7(495)495-95-95">Тел.: +7 (495) 495-95-95</a></p>
 				<p class="footer-copyright"><a href="https://htmlacademy.ru"><span class="visually-hidden">HTML Academy</span></a></p>
 			</div>
 		</div>
 	</footer>
 	<section class="feedback">
+		<h2 class="visually-hidden">Форма обратной связи</h2>
 		<form action="https://echo.htmlacademy.ru" method="post" class="feedback-popup-form">
 			<label for="name">Ваше имя:</label>
 			<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
@@ -280,10 +285,11 @@
 		<button type="button" class="feedback-popup-form-close"><span class="visually-hidden">Закрыть форму</span></button>
 	</section>
 	<section class="map-popup">
+		<h2 class="visually-hidden">Расположение офиса компании "Девайс"</h2>
 		<a href="#">
 			<img src="img/map-big.jpg" width="960" height="559" alt="Офис компании &laquo;Девайс&raquo; по адресу: г. Москва, ул. Строителей, 15">
 		</a>
-		<button type="button" class="map-popup-close"><span class="visualy-hidden">Закрыть карту</span></button>
+		<button type="button" class="map-popup-close"><span class="visually-hidden">Закрыть карту</span></button>
 	</section>
 </body>
 </html>

@@ -48,7 +48,7 @@ text-decoration: none;
 	width: 1160px;
 	margin: 0 auto;
 }
-/*.visually-hidden {
+.visually-hidden {
 position: absolute;
 overflow: hidden;
 clip: rect(0 0 0 0);
@@ -57,12 +57,13 @@ width: 1px;
 margin: -1px;
 padding: 0;
 border: 0;
-}*/
+}
 
 /* Хедер  */
 
 .main-header {
 	background-color: #f7e296;
+	margin-top: 40px;
 }
 .logo {
 	font-family: "Gilroy", "Arial", sans-serif;
@@ -72,6 +73,8 @@ border: 0;
 	text-transform: uppercase;
 }
 .header-logo {
+	position: relative;
+	top: -15px;
 	color: #000000;
 }
 .header-logo:hover {
@@ -80,8 +83,9 @@ border: 0;
 .header-logo:active {
 	opacity: 0.3;
 }
-.top-search {
-	height: 45px;
+.header-user-panel {
+	display: flex;
+	justify-content: space-between;
 }
 .site-search {
 	display: inline-block;
@@ -106,12 +110,13 @@ border: 0;
 }
 .site-search-form {
 	position: relative;
+	height: 45px;
 }
 .site-search-btn {
 	display: none;
 	position: absolute;
 	top: -9px;
-    right: 67%;;
+    right: 0;
 	width: 85px;
 	height: 49px;
 	box-sizing: border-box;
@@ -159,6 +164,7 @@ border: 0;
 }
 .header-menu {
 	display: flex;
+	margin: 0;
 	list-style: none;
 }
 .menu-item {
@@ -198,9 +204,15 @@ display: block;
 
 /*  Основное содержимое  */
 
-.slider-slogan {
+.slider {
+	display: flex;
+	background: linear-gradient(to bottom, #f7e296 100px, #ffffff 100px);
+}
+.slider-slogan, 
+.category-title {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 47px;
+	line-height: 57px;
 	font-weight: 800;
 	letter-spacing: 0.5px;
 	color: #000000;
@@ -282,9 +294,6 @@ display: block;
 .goods-image:hover {
 	background-color: #f0c52e;
 }
-.goods-image:active {
-	background-color: rgba();
-}
 .goods-item {
 	margin-right: 40px;
 	font-family: "Gilroy", "Arial", sans-serif;
@@ -344,6 +353,9 @@ display: block;
 .btn-contacts {
 	border: none;
 }
+.about-and-contacts {
+	display: flex;
+}
 
 /*  Футер  */
 
@@ -362,8 +374,9 @@ display: block;
 .footer-logo:active {
 	opacity: 0.3;
 }
-.footer-adress {
-	color: #ffffff
+.footer-address {
+	color: #ffffff;
+	font-style: normal;
 }
 .footer-menu {
 	display: flex;
