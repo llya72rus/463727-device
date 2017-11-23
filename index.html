@@ -303,12 +303,20 @@
 	<section class="feedback">
 		<h2 class="visually-hidden">Форма обратной связи</h2>
 		<form action="https://echo.htmlacademy.ru" method="post" class="feedback-popup-form">
-			<label for="name">Ваше имя:</label>
-			<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
-			<label for="email">Ваш e-mail:</label>
-			<input type="email" name="email" id="email" placeholder="Для отправки ответа">
-			<label for="feedback-text">Текст письма:</label>
-			<textarea cols="30" rows="10" name="feedback-text" id="feedback-text" placeholder="В свободной форме"></textarea>
+			<div class="name-and-email">
+				<div class="name">
+					<label for="name">Ваше имя:</label>
+					<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+				</div>
+				<div class="email">
+					<label for="email">Ваш e-mail:</label>
+					<input type="email" name="email" id="email" placeholder="Для отправки ответа">
+				</div>
+			</div>
+			<div class="form-text">
+				<label for="feedback-text">Текст письма:</label>
+				<textarea cols="30" rows="10" name="feedback-text" id="feedback-text" placeholder="В свободной форме"></textarea>
+			</div>
 			<button type="submit" class="btn-send page-link">Отправить</button>
 		</form>
 		<button type="button" class="feedback-popup-form-close"><span class="visually-hidden">Закрыть форму</span></button>

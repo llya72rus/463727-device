@@ -726,45 +726,7 @@ button.page-link {
 	opacity: 0.3;
 }
 
-/*  Форма обратной связи  */
 
-.feedback label {
-	font-family: Gilroy;
-	font-size: 18px;
-	font-weight: 800;
-	line-height: 1;
-	color: #000000;
-}
-.feedback-popup-form input, .feedback-popup-form textarea {
-	background: #f2f2f2;
-	border: none;
-	font-family: "Open Sans", "Arial", sans-serif;
-	font-size: 14px;
-	line-height: 1.29;
-	text-align: left;
-	color: rgba(70, 70, 70, 0.4);
-}
-.feedback-popup-form textarea[placeholder],
-.feedback-popup-form input::-webkit-input-placeholder { 
-	color: rgba(70, 70, 70, 0.4);
-}
-.feedback-popup-form input:hover,
-.feedback-popup-form textarea:hover {
-	background: #ebebeb;
-}
-.feedback-popup-form input:focus,
-.feedback-popup-form textarea:focus {
-	background: #ffffff;
-	color: #464646;
-	outline: 3px solid #f7e296;
-}
-.feedback-popup-form textarea {
-	resize: none;
-}
-.feedback-popup-form textarea::-webkit-input-placeholder:focus,
-.feedback-popup-form input::-webkit-input-placeholder:focus { 
-	color: #464646;
-}
 
 /*  Содержимое каталога  */
 .catalog .container {
@@ -1114,4 +1076,104 @@ button.page-link {
 }
 .first-switcher, .second-switcher, .third-switcher {
 	display: none;
+}
+
+/*  Форма обратной связи  */
+.feedback {
+	position: relative;
+	width: 960px;
+	padding: 100px;
+	padding-bottom: 90px;
+	box-sizing: border-box;
+	box-shadow: 0 0 10px 0px grey;
+	margin: 50px;
+}
+
+.feedback label {
+	display: block;
+	font-family: Gilroy;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 1;
+	color: #000000;
+	margin-bottom: 10px;
+}
+.feedback-popup-form {
+	/*display: flex;
+	flex-direction: column;*/
+}
+.feedback-popup-form input{
+	width: 360px;
+	height: 50px;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+.feedback-popup-form textarea {
+	width: 760px;
+	height: 156px;
+}
+.name-and-email {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 35px;
+}
+.name,
+.email {
+  display: flex;
+  flex-direction: column;
+}
+.feedback-popup-form input, .feedback-popup-form textarea {
+	background: #f2f2f2;
+	border: none;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 1.29;
+	text-align: left;
+	color: rgba(70, 70, 70, 0.4);
+}
+.feedback-popup-form textarea[placeholder],
+.feedback-popup-form input::-webkit-input-placeholder { 
+	color: rgba(70, 70, 70, 0.4);
+}
+.feedback-popup-form input:hover,
+.feedback-popup-form textarea:hover {
+	background: #ebebeb;
+}
+.feedback-popup-form input:focus,
+.feedback-popup-form textarea:focus {
+	background: #ffffff;
+	color: #464646;
+	outline: 3px solid #f7e296;
+}
+.feedback-popup-form textarea {
+	padding-left: 20px;
+	padding-top: 17px;
+	box-sizing: border-box;
+	resize: none;
+}
+.feedback-popup-form textarea::-webkit-input-placeholder:focus,
+.feedback-popup-form input::-webkit-input-placeholder:focus { 
+	color: #464646;
+}
+.feedback-popup-form-close {
+	position: absolute;
+	top: 4%;
+	right: 2%;
+	margin: 0;
+	padding: 0;
+	width: 58px;
+	height: 55px;
+	background-color: transparent;
+	background-image: url(../img/modal-close.svg);
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+}
+.form-text {
+	margin-bottom: 52px;
+}
+ .feedback .btn-send {
+    width: 200px;
+    margin: 0;
+    padding: 0;
 }
