@@ -10,41 +10,41 @@
 <body>
 	<div class="container">
 		<header class="main-header">
-		<div class="container">
-			<a class="header-logo logo">Device</a>
-			<nav class="main-nav">
-			<div class="header-user-panel">
-					<form action="https://echo.htmlacademy.ru" method="get" class="site-search-form">
-						<input type="text" name="site-search" class="site-search" placeholder="Поиск по сайту">
-						<button type="submit" class="site-search-btn">Найти</button>
-					</form>	
-					<div class="header-user-interface user-interface">
-						<div class="header-user-name"><a href="#">Валентин Петухов</a></div>
-						<div class="header-logout"><a href="#">Выйти</a></div>
-						<div class="header-compare"><a href="#">Сравнить</a></div>
-						<div class="header-cart"><a href="#">Корзина</a></div>
-					</div>
-				</div>
-				<ul class="header-menu">
-					<li class="header-menu-item menu-item dropdown"><a href="#">Каталог товаров</a>
-						<div class="submenu-wrapper">
-						<ul class="submenu">
-							<li class="submenu-item"><a href="#">Виртуальная реальность</a></li>
-							<li class="submenu-item"><a href="#">Моноподы для селфи</a></li>
-							<li class="submenu-item"><a href="#">Экшн-камеры</a></li>
-							<li class="submenu-item"><a href="#">Фитнес-браслеты</a></li>
-							<li class="submenu-item"><a href="#">Умные часы</a></li>
-							<li class="submenu-item"><a href="#">Квадрокоптеры</a></li>
-						</ul>
+			<div class="container">
+				<a class="header-logo logo">Device</a>
+				<nav class="main-nav">
+					<div class="header-user-panel">
+						<form action="https://echo.htmlacademy.ru" method="get" class="site-search-form">
+							<input type="text" name="site-search" class="site-search" placeholder="Поиск по сайту">
+							<button type="submit" class="site-search-btn">Найти</button>
+						</form>	
+						<div class="header-user-interface user-interface">
+							<div class="header-user-name"><a href="#">Валентин Петухов</a></div>
+							<div class="header-logout"><a href="#">Выйти</a></div>
+							<div class="header-compare"><a href="#">Сравнить</a></div>
+							<div class="header-cart"><a href="#">Корзина</a></div>
 						</div>
-					</li>
-					<li class="header-menu-item menu-item"><a href="#">Доставка</a></li>
-					<li class="header-menu-item menu-item"><a href="#">Гарантия</a></li>
-					<li class="header-menu-item menu-item"><a href="#">Контакты</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+					</div>
+					<ul class="header-menu">
+						<li class="header-menu-item menu-item dropdown"><a href="#">Каталог товаров</a>
+							<div class="submenu-wrapper">
+								<ul class="submenu">
+									<li class="submenu-item"><a href="#">Виртуальная реальность</a></li>
+									<li class="submenu-item"><a href="#">Моноподы для селфи</a></li>
+									<li class="submenu-item"><a href="#">Экшн-камеры</a></li>
+									<li class="submenu-item"><a href="#">Фитнес-браслеты</a></li>
+									<li class="submenu-item"><a href="#">Умные часы</a></li>
+									<li class="submenu-item"><a href="#">Квадрокоптеры</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="header-menu-item menu-item"><a href="#">Доставка</a></li>
+						<li class="header-menu-item menu-item"><a href="#">Гарантия</a></li>
+						<li class="header-menu-item menu-item"><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 	</div>
 	<main class="catalog">
 		<div class="container">
@@ -246,9 +246,15 @@
 			</div>
 			<div class="footer-right-block">
 				<div class="footer-user-interface user-interface">
-					<a href="#" class="footer-log-in">Войти</a>
-					<a href="#" class="footer-compare">Сравнить</a>
-					<a href="#" class="footer-basket">Корзина</a>
+					<div class="footer-log-in">
+						<a href="#">Войти</a>
+					</div>
+					<div class="footer-compare">
+						<a href="#">Сравнить</a>
+					</div>
+					<div class="footer-basket">
+						<a href="#">Корзина</a>
+					</div>
 				</div>
 				<p class="footer-phone"><a href="tel:+7(495)495-95-95">Тел.: +7 (495) 495-95-95</a></p>
 				<p class="footer-copyright"><a href="https://htmlacademy.ru"><span class="visually-hidden">HTML Academy</span></a></p>
@@ -258,12 +264,20 @@
 	<section class="feedback">
 		<h2 class="visually-hidden">Форма обратной связи</h2>
 		<form action="https://echo.htmlacademy.ru" method="post" class="feedback-popup-form">
-			<label for="name">Ваше имя:</label>
-			<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
-			<label for="email">Ваш e-mail:</label>
-			<input type="email" name="email" id="email" placeholder="Для отправки ответа">
-			<label for="feedback-text">Текст письма:</label>
-			<textarea cols="30" rows="10" name="feedback-text" id="feedback-text" placeholder="В свободной форме"></textarea>
+			<div class="name-and-email">
+				<div class="name">
+					<label for="name">Ваше имя:</label>
+					<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+				</div>
+				<div class="email">
+					<label for="email">Ваш e-mail:</label>
+					<input type="email" name="email" id="email" placeholder="Для отправки ответа">
+				</div>
+			</div>
+			<div class="form-text">
+				<label for="feedback-text">Текст письма:</label>
+				<textarea cols="30" rows="10" name="feedback-text" id="feedback-text" placeholder="В свободной форме"></textarea>
+			</div>
 			<button type="submit" class="btn-send page-link">Отправить</button>
 		</form>
 		<button type="button" class="feedback-popup-form-close"><span class="visually-hidden">Закрыть форму</span></button>

@@ -668,9 +668,9 @@ button.page-link {
 	padding: 0;
 }
 .footer-copyright img {
-   width: 27px;
-   height: 35px;
-   opacity: 1;
+	width: 27px;
+	height: 35px;
+	opacity: 1;
 }
 .footer-copyright a:hover img {
 	opacity: 0.6;
@@ -702,10 +702,10 @@ button.page-link {
 	opacity: 0.3;
 }
 .footer-social a:hover img {
-   opacity: 0.6;
+	opacity: 0.6;
 }
 .footer-social a:active img {
-   opacity: 0.1;
+	opacity: 0.1;
 }
 .footer-user-interface {
 	width: 326px;
@@ -730,8 +730,8 @@ button.page-link {
 
 /*  Содержимое каталога  */
 .catalog .container {
-  padding-left: 60px;
-  box-sizing: border-box;
+	padding-left: 60px;
+	box-sizing: border-box;
 }
 .breadcrumbs {
 	display: flex;
@@ -841,10 +841,10 @@ button.page-link {
 	opacity: 1;
 }
 .sort-switch a:hover {
-    opacity: 0.4;
+	opacity: 0.4;
 }
 .sort-switch a:active {
-    opacity: 1;
+	opacity: 1;
 }
 .goods-catalog {
 	background: linear-gradient(to right, #ebebeb 37%, #ffffff 37%);
@@ -907,7 +907,7 @@ button.page-link {
 	position: absolute;
 	flex-direction: column;
 	top: 30%;
-    left: 22%;
+	left: 22%;
 }
 .catalog-item article:hover {
 	cursor: pointer;
@@ -916,7 +916,7 @@ button.page-link {
 	display: flex;
 }
 .catalog-item article:hover .product-image {
-   opacity: 0.7;
+	opacity: 0.7;
 }
 .catalog-info {
 	display: flex;
@@ -972,27 +972,27 @@ button.page-link {
 	background: #ebebeb;
 }
 .pagination-list li:nth-child(1) {
-  width: 120px;
-  margin-right: 200px;
-  text-align: center;
+	width: 120px;
+	margin-right: 200px;
+	text-align: center;
 }
 .pagination-list li:nth-child(2) {
-  width: 40px;
-  text-align: center;
+	width: 40px;
+	text-align: center;
 }
 .pagination-list li:nth-child(3) {
-  width: 40px;
-  text-align: center;
+	width: 40px;
+	text-align: center;
 
 }
 .pagination-list li:nth-child(4) {
-  width: 40px;
-  margin-right: 200px;
-  text-align: center;
+	width: 40px;
+	margin-right: 200px;
+	text-align: center;
 }
 .pagination-list li:nth-child(5) {
-  width: 120px;
-  text-align: center;
+	width: 120px;
+	text-align: center;
 }
 .pagination-item {
 	box-sizing: border-box;
@@ -1119,8 +1119,8 @@ button.page-link {
 }
 .name,
 .email {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 .feedback-popup-form input, .feedback-popup-form textarea {
 	background: #f2f2f2;
@@ -1172,8 +1172,8 @@ button.page-link {
 .form-text {
 	margin-bottom: 52px;
 }
- .feedback .btn-send {
-    width: 200px;
-    margin: 0;
-    padding: 0;
+.feedback .btn-send {
+	width: 200px;
+	margin: 0;
+	padding: 0;
 }
