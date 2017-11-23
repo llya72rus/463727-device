@@ -8,24 +8,24 @@
 	<title>HTML Academy: Девайс</title>
 </head>
 <body>
-	<div class="container">
 	<header class="main-header">
 		<div class="container">
 			<a class="header-logo logo">Device</a>
+			<nav class="main-nav">
 			<div class="header-user-panel">
 					<form action="https://echo.htmlacademy.ru" method="get" class="site-search-form">
 						<input type="text" name="site-search" class="site-search" placeholder="Поиск по сайту">
 						<button type="submit" class="site-search-btn">Найти</button>
 					</form>	
 					<div class="header-user-interface user-interface">
-						<a href="#">Войти</a>
-						<a href="#" class="header-compare">Сравнить</a>
-						<a href="#" class="header-cart">Корзина</a>
+						<div class="login"><a href="#">Войти</a></div>
+						<div class="header-compare"><a href="#">Сравнить</a></div>
+						<div class="header-cart"><a href="#">Корзина</a></div>
 					</div>
 				</div>
-			<nav class="main-nav">
 				<ul class="header-menu">
-					<li class="header-menu-item menu-item dropdown"><a href="#">Каталог товара</a>
+					<li class="header-menu-item menu-item dropdown"><a href="#">Каталог товаров</a>
+						<div class="submenu-wrapper">
 						<ul class="submenu">
 							<li class="submenu-item"><a href="#">Виртуальная реальность</a></li>
 							<li class="submenu-item"><a href="#">Моноподы для селфи</a></li>
@@ -34,6 +34,7 @@
 							<li class="submenu-item"><a href="#">Умные часы</a></li>
 							<li class="submenu-item"><a href="#">Квадрокоптеры</a></li>
 						</ul>
+						</div>
 					</li>
 					<li class="header-menu-item menu-item"><a href="#">Доставка</a></li>
 					<li class="header-menu-item menu-item"><a href="#">Гарантия</a></li>
@@ -42,15 +43,15 @@
 			</nav>
 		</div>
 	</header>
-	</div>
 	<main>
-		<div class="container">
-			<!--  <input type="radio" name="slider-item" checked>
-			<input type="radio" name="slider-item">
-			<input type="radio" name="slider-item">-->
+		<div class="slider-wrapper container">
+			<input type="radio" class="first-switcher" name="slider-item" id="first-switcher" checked>
+			<input type="radio" class="second-switcher" name="slider-item" id="second-switcher">
+			<input type="radio" class="third-switcher" name="slider-item" id="third-switcher">
+		 
 			<section class="first-slider slider">
 				<h2 class="visually-hidden">Селфи-палка</h2>
-				<img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
+				<img src="img/slider-1.png" width="384" height="486" class="first-slider-img" alt="Палка для селфи">
 				<div class="slider-info">
 					<p class="slider-slogan">Делай селфи,<br>как Бен Стиллер!</p>
 					<p class="slider-desc">Самая длинная палка для селфи доступна в нашем магазине.
@@ -74,7 +75,7 @@
 			</section>
 			<section class="second-slider slider">
 				<h2 class="visually-hidden">Фитнес-браслет</h2>
-				<img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
+				<img src="img/slider-2.png" width="345" height="485" class="second-slider-img" alt="Фитнес-браслет">
 				<div class="slider-info">
 					<p class="slider-slogan">Худеем<br>правильно!</p>
 					<p class="slider-desc">Мотивирующие фитнес-браслеты помогут найти в себе силы 
@@ -90,7 +91,7 @@
 			</section>
 			<section class="third-slider slider">
 				<h2 class="visually-hidden">Квадрокоптер</h2>
-				<img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
+				<img src="img/slider-3.png" width="526" height="334" class="third-slider-img" alt="Квадрокоптер">
 				<div class="slider-info">
 					<p class="slider-slogan">Порхает как бабочка, жалит как пчела!</p>
 					<p class="slider-desc">Этот обычный, на первый взгляд, квадрокоптер оснащен 
@@ -109,9 +110,9 @@
 				</div>
 			</section>
 			<div class="slider-switch">
-				<button class="slider-switcher"></button>
-				<button class="slider-switcher"></button>
-				<button class="slider-switcher"></button>
+				<label for="first-switcher" class="slider-switcher"></label>
+				<label for="second-switcher" class="slider-switcher"></label>
+				<label for="third-switcher" class="slider-switcher"></label>
 			</div>
 		</div>
 		<section class="goods">
@@ -121,13 +122,13 @@
 					<li class="goods-item">
 						<a href="#">
 							<div class="goods-image"></div>
-							<h3>Виртуальная<br>реальность</h3>
+							<h3>Виртуальная реальность</h3>
 						</a>
 					</li>
 					<li class="goods-item">
 						<a href="#">
 							<div class="goods-image"></div>
-							<h3>Моноподы<br>для селфи</h3>
+							<h3>Моноподы для селфи</h3>
 						</a>
 					</li>
 					<li class="goods-item">
@@ -139,7 +140,7 @@
 					<li class="goods-item">
 						<a href="#">
 						<div class="goods-image"></div>
-						<h3>Экшн-камеры</h3>
+						<h3>Фитнес-браслеты</h3>
 					</a>
 					</li>
 					<li class="goods-item">
@@ -161,30 +162,32 @@
 			<div class="container">
 				<h2 class="visually-hidden">Преимущества</h2>
 				<ul class="features-list">
-					<li class="features-item"><button class="features-btn" type="button">Доставка</button></li>
+					<li class="features-item"><button class="features-btn active" type="button">Доставка</button></li>
 					<li class="features-item"><button class="features-btn" type="button">Гарантия</button></li>
 					<li class="features-item"><button class="features-btn" type="button">Кредит</button></li>
 				</ul>
-				<div class="features-info">
+			<ul class="features-info-list">
+				<li class="features-delivery">
 					<h2 class="section-title">Доставка</h2>
 					<p class="section-text">
 						Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж
 					</p>
-				</div>
-				<div class="features-info">
+				</li>
+				<li class="features-warranty">
 					<h2 class="section-title">Гарантия</h2>
 					<p class="section-text">
 						Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
 						Товар, не дом, конечно же.
 					</p>
-				</div>
-				<div class="features-info">
+				</li>
+				<li class="features-credit">
 					<h2 class="section-title">Кредит</h2>
 					<p class="section-text">
 						Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
 						условия кредита. Выгодные для нашего банка, разумеется.
 					</p>
-				</div>
+				</li>
+			</ul>
 			</div>
 		</section>
 		<section class="manufacturers">
@@ -245,29 +248,55 @@
 	<footer class="main-footer">
 		<div class="container">
 			<div class="footer-logo-and-adress">
-				<a href="#" class="footer-logo logo">Device</a>
+				<div class="footer-logo-wrapper"><a href="#" class="footer-logo logo">Device</a></div>
 				<address class="footer-address">г. Москва, ул. Строителей, 15</address>
 			</div>
 			<div class="footer-menu-and-social">
-					<ul class="footer-menu">
-						<li class="footer-menu-item menu-item"><a href="#">Доставка</a></li>
-						<li class="footer-menu-item menu-item"><a href="#">Гарантия</a></li>
-						<li class="footer-menu-item menu-item"><a href="#">Контакты</a></li>
-					</ul>
+				<ul class="footer-menu">
+					<li class="footer-menu-item menu-item"><a href="#">Доставка</a></li>
+					<li class="footer-menu-item menu-item"><a href="#">Гарантия</a></li>
+					<li class="footer-menu-item menu-item"><a href="#">Контакты</a></li>
+				</ul>
 				<ul class="footer-social">
-					<li><a class="btn fb" href="https://facebook.com"><span class="visually-hidden">Фейсбук</span></a></li>
-					<li><a class="btn inst" href="https://instagram.com"><span class="visually-hidden">Инстаграмм</span></a></li>
-					<li><a  class="btn tw" href="https://twitter.com"><span class="visually-hidden">Твиттер</span></a></li>
+					<li>
+						<a class="btn fb" href="https://facebook.com" target="_blank">
+							<img src="img/fb.svg" width="33" height="33" alt="Ссылка на страницу Фейсбук">
+							<span class="visually-hidden">Ссылка на страницу Фейсбук</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn inst" href="https://instagram.com" target="_blank">
+							<img src="img/instagram.svg" alt="Ссылка на страницу Инстаграм">
+							<span class="visually-hidden">Ссылка на страницу Инстаграм</span>
+						</a>
+					</li>
+					<li>
+						<a class="btn tw" href="https://twitter.com" target="_blank">
+							<img src="img/twitter.svg" alt="Ссылка на страницу Твиттер">
+							<span class="visually-hidden">Ссылка на страницу Твиттер</span>
+						</a>
+					</li>
 				</ul>
 			</div>
 			<div class="footer-right-block">
 				<div class="footer-user-interface user-interface">
-					<a href="#" class="footer-log-in">Войти</a>
-					<a href="#" class="footer-compare">Сравнить</a>
-					<a href="#" class="footer-basket">Корзина</a>
+					<div class="footer-log-in">
+						<a href="#">Войти</a>
+					</div>
+					<div class="footer-compare">
+						<a href="#">Сравнить</a>
+					</div>
+					<div class="footer-basket">
+						<a href="#">Корзина</a>
+					</div>
 				</div>
 				<p class="footer-phone"><a href="tel:+7(495)495-95-95">Тел.: +7 (495) 495-95-95</a></p>
-				<p class="footer-copyright"><a href="https://htmlacademy.ru"><span class="visually-hidden">HTML Academy</span></a></p>
+				<p class="footer-copyright">
+					<a href="https://htmlacademy.ru" target="_blank">
+						<img src="img/logo-html-academy.png" width="27" height="35" alt="Ссылка на сайт HTML Academy">
+						<span class="visually-hidden">Ссылка на сайт HTML Academy</span>
+					</a>
+				</p>
 			</div>
 		</div>
 	</footer>
