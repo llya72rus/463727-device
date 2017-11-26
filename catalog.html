@@ -18,12 +18,10 @@
 							<input type="text" name="site-search" class="site-search" placeholder="Поиск по сайту">
 							<button type="submit" class="site-search-btn">Найти</button>
 						</form>	
-						<div class="header-user-interface user-interface">
-							<div class="header-user-name"><a href="#">Валентин Петухов</a></div>
-							<div class="header-logout"><a href="#">Выйти</a></div>
-							<div class="header-compare"><a href="#">Сравнить</a></div>
-							<div class="header-cart"><a href="#">Корзина</a></div>
-						</div>
+						<div class="header-user-name"><a href="#">Валентин Петухов</a></div>
+						<div class="header-logout"><a href="#">Выйти</a></div>
+						<div class="header-compare"><a href="#">Сравнить</a></div>
+						<div class="header-cart"><a href="#">Корзина</a></div>
 					</div>
 					<ul class="header-menu">
 						<li class="header-menu-item menu-item dropdown"><a href="#">Каталог товаров</a>
@@ -214,7 +212,7 @@
 	<footer class="main-footer">
 		<div class="container">
 			<div class="footer-logo-and-adress">
-				<a href="#" class="footer-logo logo">Device</a>
+				<div class="footer-logo-wrapper"><a href="#" class="footer-logo logo">Device</a></div>
 				<address class="footer-address">г. Москва, ул. Строителей, 15</address>
 			</div>
 			<div class="footer-menu-and-social">
@@ -245,19 +243,24 @@
 				</ul>
 			</div>
 			<div class="footer-right-block">
-				<div class="footer-user-interface user-interface">
-					<div class="footer-log-in">
+				<div class="footer-user-interface">
+					<div class="footer-login">
 						<a href="#">Войти</a>
 					</div>
 					<div class="footer-compare">
 						<a href="#">Сравнить</a>
 					</div>
-					<div class="footer-basket">
+					<div class="footer-cart">
 						<a href="#">Корзина</a>
 					</div>
 				</div>
 				<p class="footer-phone"><a href="tel:+7(495)495-95-95">Тел.: +7 (495) 495-95-95</a></p>
-				<p class="footer-copyright"><a href="https://htmlacademy.ru"><span class="visually-hidden">HTML Academy</span></a></p>
+				<p class="footer-copyright">
+					<a href="https://htmlacademy.ru" target="_blank">
+						<img src="img/logo-html-academy.png" width="27" height="35" alt="Ссылка на сайт HTML Academy">
+						<span class="visually-hidden">Ссылка на сайт HTML Academy</span>
+					</a>
+				</p>
 			</div>
 		</div>
 	</footer>
