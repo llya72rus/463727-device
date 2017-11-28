@@ -48,15 +48,14 @@
 		<div class="container">
 			<h1 class="category-title">Моноподы для селфи</h1>
 			<ul class="breadcrumbs">
-				<li><a href="index.html">Главная</a></li>
-				<li><a href="#">Каталог товаров</a></li>
-				<li class="breadcrumbs-current">Моноподы для селфи</li>
+				<li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+				<li class="breadcrumbs-item"><a href="#">Каталог товаров</a></li>
+				<li class="breadcrumbs-item current"><a>Моноподы для селфи</a></li>
 			</ul>
 		</div>
 		<header class="filter-panel">
 			<div class="container">
 				<h2 class="filters-title">Фильтр</h2>
-				<h2 class="visually-hidden">Каталог товаров раздела "Моноподы для селфи"</h2>
 				<div class="sort">
 					<span class="sort-title">Сортировка:</span>
 					<ul class="sort-list">
@@ -75,60 +74,46 @@
 			<div class="container">
 				<aside class="filters">
 					<form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-						<fieldset>
+						<fieldset class="filter-price">
 							<legend class="filter-type-name">Стоимость</legend>
 							<div class="price-range">
-								<span class="price-range__price-roller__left"></span>
-								<span class="price-range__price-roller__right"></span>
+								<span class="price-roller price-roller_left"></span>
+								<span class="price-roller price-roller_right"></span>
+								<span class="lowest-price">от 0</span>
+								<span class="highest-price">до 5000</span>
 							</div>
 						</fieldset>
-						<fieldset>
-							<legend class="filter-type-name">Цвет</legend>
+						<fieldset class="filter-color">
+							<legend class="filter-type-name filter-type-name_color">Цвет</legend>
 							<p class="filter-item">
-								<label>
-									<input type="checkbox" name="black" id="filter-black" class="visually-hidden filter-black" checked>
-									<span class="filter-checkbox-indicator"></span>
-									Черный
-								</label>
+								<input type="checkbox" name="black" id="filter-black" class="visually-hidden" checked>
+								<label for="filter-black">Черный</label>
 							</p>
 							<p class="filter-item">
-								<label>
-									<input type="checkbox" name="white" id="filter-white" class="visually-hidden filter-white">
-									<span class="filter-checkbox-indicator"></span>
-									Белый
-								</label>
+								<input type="checkbox" name="white" id="filter-white" class="visually-hidden">
+								<label for="filter-white">Белый</label>
 							</p>
 							<p class="filter-item">
-								<label>
-									<input type="checkbox" name="blue" id="filter-blue" class="visually-hidden filter-blue" checked>
-									<span class="filter-checkbox-indicator"></span>
-									Синий
-								</label>
+								<input type="checkbox" name="blue" id="filter-blue" class="visually-hidden" checked>
+								<label for="filter-blue">Синий</label>
 							</p>
 							<p class="filter-item">
-								<label>
-									<input type="checkbox" name="red" id="filter-red" class="visually-hidden filter-red" checked>
-									<span class="filter-checkbox-indicator"></span>
-									Красный
-								</label>
+								<input type="checkbox" name="red" id="filter-red" class="visually-hidden" checked>
+								<label for="filter-red">Красный</label>
 							</p>
 							<p class="filter-item">
-								<label>
-									<input type="checkbox" name="pink" id="filter-pink" class="visually-hidden filter-pink">
-									<span class="filter-checkbox-indicator"></span>
-									Розовый
-								</label>
+								<input type="checkbox" name="pink" id="filter-pink" class="visually-hidden">
+								<label for="filter-pink">Розовый</label>
 							</p>
 						</fieldset>
-						<fieldset>
-							<legend class="folter-type-name">Bluetooth</legend>
+						<fieldset class="filter-bluetooth">
+							<legend class="filter-type-name filter-type-name_bluetooth">Bluetooth</legend>
 							<p class="filter-item">
 								<input type="radio" name="bluetooth" id="bluetooth-available" class="visually-hidden" checked> 
 								<label for="bluetooth-available">Есть</label>
 							</p>
 							<p class="filter-item">
 								<input type="radio" name="bluetooth" id="bluetooth-not-available" class="visually-hidden">
-								<span class="filter-checkbox-indicator"></span>
 								<label for="bluetooth-not-available">Нет</label>
 							</p>
 						</fieldset>
@@ -136,6 +121,7 @@
 					</form>
 				</aside>
 				<section class="products">
+					<h2 class="visually-hidden">Каталог товаров раздела "Моноподы для селфи"</h2>
 					<ul class="catalog-list">
 						<li class="catalog-item">
 							<article class="product-card">
@@ -157,7 +143,7 @@
 								<img src="img/item-2.jpg" width="360" height="380" class="product-image" alt="Профессиональная селфи-палка">
 								<div class="catalog-info">
 									<h3 class="product-card-title">
-										<a href="#">Профессиональная селфи-палка</a>
+										<a href="#">Профессиональная<br>селфи-палка</a>
 									</h3>
 									<span class="product-card-price">1 500 руб.</span>
 								</div>
@@ -169,7 +155,7 @@
 						</li>
 						<li class="catalog-item">
 							<article class="product-card">
-								<img src="img/item-3.jpg" width="360" height="380" lass="product-image" alt="Непотопляемая селфи-палка">
+								<img src="img/item-3.jpg" width="360" height="380" class="product-image" alt="Непотопляемая селфи-палка">
 								<div class="catalog-info">
 									<h3 class="product-card-title">
 										<a href="#">Непотопляемая селфи-палка</a>
@@ -183,8 +169,8 @@
 							</article>	
 						</li>
 						<li class="catalog-item">
-							<article class="product-card">
-								<img src="img/item-4.jpg" width="360" height="380" lass="product-image" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
+							<article class="product-card new">
+								<img src="img/item-4.jpg" width="360" height="380" class="product-image" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
 								<div class="catalog-info">
 									<h3 class="product-card-title">
 										<a href="#">Селфи-палка &laquo;Следуй за мной&raquo;</a>
@@ -200,9 +186,13 @@
 					</ul>
 					<ul class="pagination-list">
 						<li class="pagination-item back"><a>Назад</a></li>
-						<li class="pagination-item current"><a>1</a></li>
-						<li class="pagination-item"><a href="#">2</a></li>
-						<li class="pagination-item"><a href="#">3</a></li>
+						<li class="pagination-item pages">
+							<ul class="page-list">
+								<li class="page-list-item current"><a href="#">1</a></li>
+								<li class="page-list-item"><a href="#">2</a></li>
+								<li class="page-list-item"><a href="#">3</a></li>
+							</ul>
+						</li>
 						<li class="pagination-item forward"><a href="#">Вперед</a></li>
 					</ul>
 				</section>
