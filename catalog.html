@@ -4,14 +4,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-min.css">
 	<title>HTML Academy: Девайс</title>
 </head>
 <body>
 	<div class="container">
-		<header class="main-header">
+		<header class="main-header main-header_inner">
 			<div class="container">
-				<a class="header-logo logo">Device</a>
+				<a href="index.html" class="header-logo logo">Device</a>
 				<nav class="main-nav">
 					<div class="header-user-panel">
 						<form action="https://echo.htmlacademy.ru" method="get" class="site-search-form">
@@ -86,34 +86,34 @@
 						<fieldset class="filter-color">
 							<legend class="filter-type-name filter-type-name_color">Цвет</legend>
 							<p class="filter-item">
-								<input type="checkbox" name="black" id="filter-black" class="visually-hidden" checked>
+								<input type="checkbox" name="color" value="black" id="filter-black" class="visually-hidden" checked>
 								<label for="filter-black">Черный</label>
 							</p>
 							<p class="filter-item">
-								<input type="checkbox" name="white" id="filter-white" class="visually-hidden">
+								<input type="checkbox" name="color" value="white" id="filter-white" class="visually-hidden">
 								<label for="filter-white">Белый</label>
 							</p>
 							<p class="filter-item">
-								<input type="checkbox" name="blue" id="filter-blue" class="visually-hidden" checked>
+								<input type="checkbox" name="color" value="blue" id="filter-blue" class="visually-hidden" checked>
 								<label for="filter-blue">Синий</label>
 							</p>
 							<p class="filter-item">
-								<input type="checkbox" name="red" id="filter-red" class="visually-hidden" checked>
+								<input type="checkbox" name="color" value="red" id="filter-red" class="visually-hidden" checked>
 								<label for="filter-red">Красный</label>
 							</p>
 							<p class="filter-item">
-								<input type="checkbox" name="pink" id="filter-pink" class="visually-hidden">
+								<input type="checkbox" name="color" value="pink" id="filter-pink" class="visually-hidden">
 								<label for="filter-pink">Розовый</label>
 							</p>
 						</fieldset>
 						<fieldset class="filter-bluetooth">
 							<legend class="filter-type-name filter-type-name_bluetooth">Bluetooth</legend>
 							<p class="filter-item">
-								<input type="radio" name="bluetooth" id="bluetooth-available" class="visually-hidden" checked> 
+								<input type="radio" name="bluetooth" value="bluetooth-available" id="bluetooth-available" class="visually-hidden" checked> 
 								<label for="bluetooth-available">Есть</label>
 							</p>
 							<p class="filter-item">
-								<input type="radio" name="bluetooth" id="bluetooth-not-available" class="visually-hidden">
+								<input type="radio" name="bluetooth" value="bluetooth-not-available" id="bluetooth-not-available" class="visually-hidden">
 								<label for="bluetooth-not-available">Нет</label>
 							</p>
 						</fieldset>
@@ -254,33 +254,5 @@
 			</div>
 		</div>
 	</footer>
-	<section class="feedback">
-		<h2 class="visually-hidden">Форма обратной связи</h2>
-		<form action="https://echo.htmlacademy.ru" method="post" class="feedback-popup-form">
-			<div class="name-and-email">
-				<div class="name">
-					<label for="name">Ваше имя:</label>
-					<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
-				</div>
-				<div class="email">
-					<label for="email">Ваш e-mail:</label>
-					<input type="email" name="email" id="email" placeholder="Для отправки ответа">
-				</div>
-			</div>
-			<div class="form-text">
-				<label for="feedback-text">Текст письма:</label>
-				<textarea cols="30" rows="10" name="feedback-text" id="feedback-text" placeholder="В свободной форме"></textarea>
-			</div>
-			<button type="submit" class="btn-send page-link">Отправить</button>
-		</form>
-		<button type="button" class="feedback-popup-form-close"><span class="visually-hidden">Закрыть форму</span></button>
-	</section>
-	<section class="map-popup">
-		<h2 class="visually-hidden">Расположение офиса компании "Девайс"</h2>
-		<a href="#">
-			<img src="img/map-big.jpg" width="960" height="559" alt="Офис компании &laquo;Девайс&raquo; по адресу: г. Москва, ул. Строителей, 15">
-		</a>
-		<button type="button" class="map-popup-close"><span class="visually-hidden">Закрыть карту</span></button>
-	</section>
 </body>
 </html>
